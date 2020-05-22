@@ -14,17 +14,28 @@ h1, h2, h3, h4, h5, h6, p, ul {margin: 0}
 ul {padding: 0; list-style-type: none}
 a {text-decoration: none;color: #000;display: inline-block}
 
+body {
+  background-color: #66a1af;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
 .hero {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  transform: translate(40vw, 25vh);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 div.name,
 div.wang,
 div.dong {
+  width: 400px;
+  height: auto;
   display: flex;
 }
 
@@ -40,12 +51,16 @@ div.dong {
 h2 {
   font-family: 'Permanent Marker', cursive;
   font-size: 10rem;
+  color: #de9e86;
+  filter: drop-shadow(10px 10px 5px #3f656f);
 }
 
 h3 {
   font-family: 'Caveat', cursive;
   font-size: 3rem;
   margin-left: 5px;
+  color: #efbeab;
+  filter: drop-shadow(10px 10px 5px #3f656f);
 }
 
 div.wang h2 {
