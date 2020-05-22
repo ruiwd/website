@@ -17,15 +17,15 @@ a {text-decoration: none;color: #000;display: inline-block}
 .hero {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  transform: translate(40vw, 25vh);
 }
 
 div.name,
 div.wang,
 div.dong {
   display: flex;
-  position: relative;
-  transform: translate(40%, 100px);
 }
 
 div.name {
@@ -51,7 +51,3 @@ h3 {
 div.wang h2 {
   margin-right: 5px;
 }
-
-/* div.dong h2 {
-  font-size: 12rem;
-} */
