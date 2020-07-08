@@ -1,0 +1,13 @@
+@import '_variables.scss';
+
+@mixin headingL($size) {
+  font-family: $fontOne;
+  font-size: $size * 1rem;
+  color: $colorTwo;
+}
+
+@mixin textL($size) {
+  font-family: $fontTwo;
+  font-size: $size * 1rem;
+  color: $colorTwo;
+}

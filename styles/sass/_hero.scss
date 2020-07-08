@@ -1,0 +1,70 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+section.hero {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  transform-style: preserve-3d;
+
+  &::before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    top: 0em;
+    left: 0em;
+    position: absolute;
+    background-image: url('../assets/heroImage.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -10;
+    transform:translateZ(-1px) scale(2);
+  }
+
+  .parallaxText {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    
+
+    div.name,
+    div.wang,
+    div.dong {
+      width: auto;
+      height: auto;
+      display: flex;
+    }
+
+    div.name {
+      align-items: flex-end;
+    }
+
+    div.wang,
+    div.dong {
+      align-items: center;
+    }
+
+    h1, h2 {
+      font-family: $fontOne;
+      font-size: 10rem;
+      color: $colorTwo;
+    }
+
+    h3 {
+      font-family: $fontTwo;
+      font-size: 3rem;
+      margin-left: 5px;
+      color: $colorTwo;
+    }
+
+    h1, h2, h3 {
+      filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.4)) drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    }
+
+    div.wang h2 {
+      margin-right: 5px;
+    }
+  }
+}

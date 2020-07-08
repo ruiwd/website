@@ -1,0 +1,34 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+section.about {
+  background: linear-gradient(90deg, $colorOneDD 0%, $colorOneD 70%, $colorOne 100%); 
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+
+  .aboutText {
+    margin: 5rem 0 5rem 5vw;
+
+    h2 {
+      @include headingL(5);
+    };
+  
+    p {
+      padding-top: 3rem;
+      @include textL(3.5);
+    };
+  }
+
+  .imgContainer {
+    width: auto;
+    align-self: flex-end;
+
+    img {
+      display: block;
+      width: 100%;
+      filter: drop-shadow(-10px 0px 5px rgba(0,0,0,0.3));
+    }
+  }
+}
