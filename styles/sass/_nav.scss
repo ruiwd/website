@@ -6,11 +6,12 @@
 
 .navTop.web {
   position: absolute;
+  right: 0;
   background-color: transparent;
   z-index: 20;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 
   ul {
     display: flex;
