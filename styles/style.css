@@ -282,6 +282,86 @@ a {
   font-family: inherit;
 }
 
+a.top {
+  padding: .3rem 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  z-index: 20;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 15px;
+}
+
+a.top:hover, a.top:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a.button {
+  padding: 0.6rem 0 0.4rem 0;
+  line-height: 2rem;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+a.button::before, a.button::after {
+  content: '|';
+  font-size: 5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: relative;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  color: #fff;
+  top: 0.4rem;
+}
+
+a.button p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+a.button::before {
+  right: 1.7rem;
+}
+
+a.button::after {
+  left: 1.7rem;
+}
+
+a.button:hover,
+a.button:focus {
+  background-color: #fff;
+}
+
+a.button:hover p,
+a.button:focus p {
+  color: #24383d;
+}
+
+a.button:hover::before,
+a.button:focus::before {
+  right: .5rem;
+}
+
+a.button:hover::after,
+a.button:focus::after {
+  left: .5rem;
+}
+
 .navTop.mobile {
   display: none;
 }
@@ -311,11 +391,14 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 400px;
 }
 
 .navTop.web ul li {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #66a1af;
   font-size: 5rem;
 }
@@ -325,9 +408,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
   border-radius: 15px 0px 0px 15px;
 }
 
@@ -339,13 +419,15 @@ a {
   font-size: 4rem;
   display: none;
   margin: 0;
+  font-weight: 700;
 }
 
-.navTop.web ul li a:hover > p {
+.navTop.web ul li a:hover > p,
+.navTop.web ul li a:focus > p {
   display: inline;
 }
 
-.navTop.web ul li a:hover {
+.navTop.web ul li a:hover, .navTop.web ul li a:focus {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -397,6 +479,10 @@ section.hero .parallaxText div.name {
           align-items: flex-end;
 }
 
+section.hero .parallaxText div.name h3 {
+  padding-bottom: 15px;
+}
+
 section.hero .parallaxText div.wang,
 section.hero .parallaxText div.dong {
   -webkit-box-align: center;
@@ -405,16 +491,16 @@ section.hero .parallaxText div.dong {
 }
 
 section.hero .parallaxText h1, section.hero .parallaxText h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 10rem;
-  color: #eed3bc;
+  color: #fff;
 }
 
 section.hero .parallaxText h3 {
-  font-family: "Caveat", cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   margin-left: 5px;
-  color: #eed3bc;
+  color: #fff;
 }
 
 section.hero .parallaxText h1, section.hero .parallaxText h2, section.hero .parallaxText h3 {
@@ -427,37 +513,50 @@ section.hero .parallaxText div.wang h2 {
 }
 
 section.about {
-  background: -webkit-gradient(linear, left top, right top, from(#24383d), color-stop(70%, #385961), to(#66a1af));
-  background: linear-gradient(90deg, #24383d 0%, #385961 70%, #66a1af 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#24383d), color-stop(70%, #385961), to(#66a1af)), url(../assets/logoW.png);
+  background-image: linear-gradient(90deg, #24383d 0%, #385961 70%, #66a1af 100%), url(../assets/logoW.png);
+  background-position: center, right;
+  background-size: contain, contain;
   position: relative;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.about .aboutText {
-  margin: 5rem 0 5rem 5vw;
+  width: 70%;
+  padding: 5rem;
+  text-align: center;
 }
 
 section.about .aboutText h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 5rem;
-  color: #eed3bc;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-section.about .aboutText p {
+section.about .aboutText p.description {
   padding-top: 3rem;
-  font-family: "Caveat", cursive;
-  font-size: 3.5rem;
-  color: #eed3bc;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+section.about .aboutText a.button {
+  margin-top: 5rem;
 }
 
 section.about .imgContainer {
-  width: auto;
+  margin-top: 4rem;
+  width: 25vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

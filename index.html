@@ -11,17 +11,23 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
 
   <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap" rel="stylesheet"> 
   <script src='https://kit.fontawesome.com/30b04c8f55.js' crossorigin='anonymous'></script>
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Script Libraries -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <header>
-    <nav class="navTop web">
+    <nav class="navTop web scrolled">
       <ul>
-        <li><a href="#"><i class="fas fa-home"></i><p>Home</p></a></li>
+        <li><a href="#hero"><i class="fas fa-home"></i><p>Home</p></a></li>
         <li><a href="#about"><i class="fas fa-search"></i><p>About</p></a></li>
         <li><a href="#portfolio"><i class="fas fa-folder"></i><p>Portfolio</p></a></li>
         <li><a href="#contact"><i class="fas fa-phone"></i><p>Contact</p></a></li>
@@ -38,7 +44,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="parallaxText">
       <div class="name">
         <h1 class>RUI</h1>
@@ -62,9 +68,11 @@
   </section>
 
   <section id="about" class="about">
-    <div class="aboutText"> 
+    <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
+    <div class="aboutText wrapper"> 
       <h2>Who am I?</h2>
-      <p>A semi-demi-perfectionist with a passion for aesthetics that enjoys creating websites and applications that are not only a pleasure to use but also to look at.</p>
+      <p class="description">A semi-demi-perfectionist with a passion for aesthetics that enjoys creating websites and applications that are not only a pleasure to use but also to look at.</p>
+      <a class="button" href="#portfolio"><p>See my work</p></a>
     </div>
     <div class="imgContainer">
       <img src="./assets/headshot.png" alt="Rui Wang-Dong">
@@ -76,7 +84,7 @@
   </section>  
 
   <section id="contact" class="contact">
-
+    
   </section>
 
   <script src= 'https://code.jquery.com/jquery-3.4.1.js' integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>

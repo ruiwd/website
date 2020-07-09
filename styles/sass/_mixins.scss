@@ -4,10 +4,12 @@
   font-family: $fontOne;
   font-size: $size * 1rem;
   color: $colorTwo;
+  font-weight: 700;
 }
 
 @mixin textL($size) {
   font-family: $fontTwo;
   font-size: $size * 1rem;
   color: $colorTwo;
+  font-weight: 300;
 }

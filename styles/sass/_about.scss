@@ -2,27 +2,38 @@
 @import '_mixins.scss';
 
 section.about {
-  background: linear-gradient(90deg, $colorOneDD 0%, $colorOneD 70%, $colorOne 100%); 
+  background-image: linear-gradient(90deg, $colorOneDD 0%, $colorOneD 70%, $colorOne 100%), url(../assets/logoW.png);
+  background-position: center, right;
+  background-size: contain, contain;
   position: relative;
   z-index: 10;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 
   .aboutText {
-    margin: 5rem 0 5rem 5vw;
+    width: 70%;
+    padding: 5rem;
+    text-align: center;
 
     h2 {
       @include headingL(5);
+      text-transform: uppercase;
     };
   
-    p {
+    p.description {
       padding-top: 3rem;
-      @include textL(3.5);
+      @include textL(2);
+      line-height: 3rem;
     };
+
+    a.button {
+      margin-top: 5rem;
+    }
   }
 
   .imgContainer {
-    width: auto;
+    margin-top: 4rem;
+    width: 25vw;
     align-self: flex-end;
 
     img {
