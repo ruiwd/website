@@ -11,13 +11,13 @@ a.top {
   @include headingL(4);
   position: absolute;
   z-index: 20;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 1.5rem;
   border-radius: 15px;
 
   &:hover,
   &:focus {
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: rgba(255, 255, 255, 0.2)
   }
 }
 
@@ -67,6 +67,7 @@ a.button:focus {
   &::before {
     right: .5rem;
   }
+
   &::after {
     left: .5rem;
   }

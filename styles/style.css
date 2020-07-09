@@ -259,7 +259,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #66a1af;
+  background-color: #b3b3b3;
   width: 100%;
   height: 100%;
   -webkit-perspective: 1px;
@@ -290,13 +290,13 @@ a.top {
   font-weight: 700;
   position: absolute;
   z-index: 20;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 1.5rem;
   border-radius: 15px;
 }
 
 a.top:hover, a.top:focus {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 a.button {
@@ -349,7 +349,7 @@ a.button:focus {
 
 a.button:hover p,
 a.button:focus p {
-  color: #24383d;
+  color: #3b3b3b;
 }
 
 a.button:hover::before,
@@ -399,7 +399,7 @@ a.button:focus::after {
 
 .navTop.web ul li {
   font-family: "Montserrat", sans-serif;
-  color: #66a1af;
+  color: #b3b3b3;
   font-size: 5rem;
 }
 
@@ -428,7 +428,7 @@ a.button:focus::after {
 }
 
 .navTop.web ul li a:hover, .navTop.web ul li a:focus {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 section.hero {
@@ -446,7 +446,7 @@ section.hero::before {
   top: 0em;
   left: 0em;
   position: absolute;
-  background-image: url("../assets/heroImage.jpg");
+  background-image: url("../assets/heroImage2.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -504,8 +504,8 @@ section.hero .parallaxText h3 {
 }
 
 section.hero .parallaxText h1, section.hero .parallaxText h2, section.hero .parallaxText h3 {
-  -webkit-filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.4)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
 }
 
 section.hero .parallaxText div.wang h2 {
@@ -513,8 +513,8 @@ section.hero .parallaxText div.wang h2 {
 }
 
 section.about {
-  background-image: -webkit-gradient(linear, left top, right top, from(#24383d), color-stop(70%, #385961), to(#66a1af)), url(../assets/logoW.png);
-  background-image: linear-gradient(90deg, #24383d 0%, #385961 70%, #66a1af 100%), url(../assets/logoW.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b3b3b), color-stop(70%, #5a5a5a), to(#b3b3b3)), url(../assets/logoW.png);
+  background-image: linear-gradient(90deg, #3b3b3b 0%, #5a5a5a 70%, #b3b3b3 100%), url(../assets/logoW.png);
   background-position: center, right;
   background-size: contain, contain;
   position: relative;
