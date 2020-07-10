@@ -1,0 +1,16 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: $colorOneDD;
+  padding: 3rem 0;
+
+  p {
+    text-align: center;
+    @include textOne(2.5);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

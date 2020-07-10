@@ -1,6 +1,31 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
+html {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $colorOneD;
+  width: 100%;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
 a {
   color: inherit;
   font-family: inherit;
@@ -9,11 +34,13 @@ a {
 a.top {
   padding: .3rem 1.8rem;
   @include headingL(4);
+  color: $colorOne;
   position: absolute;
-  z-index: 20;
+  z-index: 200;
   top: 1.5rem;
   left: 1.5rem;
   border-radius: 15px;
+  transition: all 0.3s;
 
   &:hover,
   &:focus {
@@ -26,6 +53,8 @@ a.button {
   line-height: 2rem;
   transition-delay: 0.2s;
   transition-duration: 0.3s;
+  @include headingL(2);
+  text-transform: uppercase;
 
   &::before, &::after {
     content: '|';
@@ -71,4 +100,8 @@ a.button:focus {
   &::after {
     left: .5rem;
   }
+}
+
+section {
+  position: relative;
 }

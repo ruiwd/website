@@ -1,0 +1,76 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+section.portfolio {
+  background-color: $colorThree;
+  padding: 7rem 0 5rem 0;
+  position: relative;
+  z-index: 100;
+  // transform-style: preserve-3d;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 5rem;
+      @include headingBox(3);
+      text-align: center;
+    }
+
+    .allProjects {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .singleProject {
+        width: 40rem;
+        margin: auto 2rem 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          @include textOne(3);
+          font-weight: 400;
+          margin-bottom: 2rem;
+        }
+
+        h4 {
+          @include textOne(2);
+          margin-bottom: 2rem;
+        }
+
+        p.projectDescription {
+          @include textTwo(2);
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // &::before {
+  //   content: '🖿';
+  //   display: block;
+  //   font-size: 30rem;
+  //   width: 100%;
+  //   max-height: 100%;
+  //   position: absolute;
+  //   z-index: 40;
+  //   transform: translateX(10%) translateY(20rem) translateZ(-1px) scale(2);
+  //   opacity: .1;
+  // }
+
+  // &::after {
+  //   content: '';
+  //   display: block;
+  //   background-color: $colorThree;
+  //   width: 100vw;
+  //   height: 50rem;
+  //   position: relative;
+  //   transform: translateZ(-2px) scale(4);
+  //   z-index: 30;
+  // }
+}

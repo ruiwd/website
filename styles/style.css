@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -259,7 +260,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #b3b3b3;
+  background-color: #5a5a5a;
   width: 100%;
   height: 100%;
   -webkit-perspective: 1px;
@@ -288,11 +289,14 @@ a.top {
   font-size: 4rem;
   color: #fff;
   font-weight: 700;
+  color: #b3b3b3;
   position: absolute;
-  z-index: 20;
+  z-index: 200;
   top: 1.5rem;
   left: 1.5rem;
   border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 a.top:hover, a.top:focus {
@@ -306,6 +310,11 @@ a.button {
           transition-delay: 0.2s;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 a.button::before, a.button::after {
@@ -362,15 +371,20 @@ a.button:focus::after {
   left: .5rem;
 }
 
+section {
+  position: relative;
+}
+
 .navTop.mobile {
   display: none;
 }
 
 .navTop.web {
   position: absolute;
+  top: 5rem;
   right: 0;
   background-color: transparent;
-  z-index: 20;
+  z-index: 100;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,6 +423,8 @@ a.button:focus::after {
   display: -ms-flexbox;
   display: flex;
   border-radius: 15px 0px 0px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navTop.web ul li a i {
@@ -420,6 +436,8 @@ a.button:focus::after {
   display: none;
   margin: 0;
   font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navTop.web ul li a:hover > p,
@@ -461,6 +479,10 @@ section.hero .parallaxText {
   left: 10%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
+  border: solid 1rem #fff;
+  padding: 2rem 5rem;
+  -webkit-filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
 }
 
 section.hero .parallaxText div.name,
@@ -503,59 +525,57 @@ section.hero .parallaxText h3 {
   color: #fff;
 }
 
-section.hero .parallaxText h1, section.hero .parallaxText h2, section.hero .parallaxText h3 {
-  -webkit-filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
-          filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5)) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
-}
-
 section.hero .parallaxText div.wang h2 {
   margin-right: 5px;
 }
 
 section.about {
-  background-image: -webkit-gradient(linear, left top, right top, from(#3b3b3b), color-stop(70%, #5a5a5a), to(#b3b3b3)), url(../assets/logoW.png);
-  background-image: linear-gradient(90deg, #3b3b3b 0%, #5a5a5a 70%, #b3b3b3 100%), url(../assets/logoW.png);
-  background-position: center, right;
-  background-size: contain, contain;
-  position: relative;
-  z-index: 10;
+  padding-top: 7rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#202020), color-stop(50%, #3b3b3b), to(#5a5a5a));
+  background-image: linear-gradient(90deg, #202020 0%, #3b3b3b 50%, #5a5a5a 100%);
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.about .aboutText {
+  margin-left: 7%;
   width: 70%;
-  padding: 5rem;
-  text-align: center;
+  padding-bottom: 5rem;
 }
 
 section.about .aboutText h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 2rem;
 }
 
 section.about .aboutText p.description {
-  padding-top: 3rem;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: #fff;
   font-weight: 300;
   line-height: 3rem;
+  margin-top: 6rem;
 }
 
 section.about .aboutText a.button {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 section.about .imgContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-right: 0;
   width: 25vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -566,4 +586,206 @@ section.about .imgContainer img {
   width: 100%;
   -webkit-filter: drop-shadow(-10px 0px 5px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(-10px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 800px) {
+  section.about .aboutText {
+    width: 100%;
+    margin-right: 7%;
+  }
+  section.about .imgContainer {
+    display: none;
+  }
+}
+
+section.portfolio {
+  background-color: #385261;
+  padding: 7rem 0 5rem 0;
+  position: relative;
+  z-index: 100;
+}
+
+section.portfolio .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.portfolio .wrapper h2 {
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 2rem 5rem;
+  border: solid 0.5rem #fff;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+
+section.portfolio .wrapper .allProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.portfolio .wrapper .allProjects .singleProject {
+  width: 40rem;
+  margin: auto 2rem 5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.portfolio .wrapper .allProjects .singleProject h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+section.portfolio .wrapper .allProjects .singleProject h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+section.portfolio .wrapper .allProjects .singleProject p.projectDescription {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section.contact {
+  padding: 7rem 0 7rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  z-index: -100;
+}
+
+section.contact::before {
+  content: '☎';
+  font-size: 30rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -20;
+  -webkit-transform: translateX(150%) translateY(20rem) translateZ(-1px) scale(2);
+          transform: translateX(150%) translateY(20rem) translateZ(-1px) scale(2);
+  opacity: .1;
+}
+
+section.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .wrapper h2 {
+  text-transform: uppercase;
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 2rem 5rem;
+  border: solid 0.5rem #fff;
+  letter-spacing: 2rem;
+}
+
+section.contact .wrapper .iconContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  color: #fff;
+}
+
+section.contact .wrapper .iconContainer .icon {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .wrapper .iconContainer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+  display: inline;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  section.contact .left, section.contact .right {
+    width: 100%;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #3b3b3b;
+  padding: 3rem 0;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 300;
+  font-weight: 400;
+  text-transform: uppercase;
 }

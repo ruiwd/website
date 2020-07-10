@@ -7,9 +7,28 @@
   font-weight: 700;
 }
 
-@mixin textL($size) {
+@mixin textOne($size) {
   font-family: $fontTwo;
   font-size: $size * 1rem;
   color: $colorTwo;
   font-weight: 300;
+}
+
+@mixin textTwo($size) {
+  font-family: $fontThree;
+  font-size: $size * 1rem;
+  color: $colorTwo;
+  font-weight: 100;
+}
+
+@mixin headingBox($size) {
+  text-transform: uppercase;
+  display: inline;
+  font-family: $fontOne;
+  font-size: $size * 1rem;
+  color: $colorTwo;
+  font-weight: 700;
+  padding: 2rem 5rem;
+  border: solid .5rem $colorTwo;
+  letter-spacing: 2rem;
 }

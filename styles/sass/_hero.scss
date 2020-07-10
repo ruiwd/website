@@ -27,9 +27,9 @@ section.hero {
     top: 50%;
     left: 10%;
     transform: translate(0%, -50%);
-    // padding: 2rem;
-    // border-radius: 15px;
-    // background-color: rgba($color: #fff, $alpha: 0.7);
+    border: solid 1rem $colorTwo;
+    padding: 2rem 5rem;
+    filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5)) drop-shadow(3px 3px 3px rgba(0,0,0,.7));
 
     div.name,
     div.wang,
@@ -65,9 +65,9 @@ section.hero {
       color: $colorTwo;
     }
 
-    h1, h2, h3 {
-      filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5)) drop-shadow(3px 3px 3px rgba(0,0,0,.7));
-    }
+    // h1, h2, h3 {
+
+    // }
 
     div.wang h2 {
       margin-right: 5px;

@@ -2,37 +2,38 @@
 @import '_mixins.scss';
 
 section.about {
-  background-image: linear-gradient(90deg, $colorOneDD 0%, $colorOneD 70%, $colorOne 100%), url(../assets/logoW.png);
-  background-position: center, right;
-  background-size: contain, contain;
-  position: relative;
-  z-index: 10;
+  padding-top: 7rem;
+  background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, $colorOneDD 50%, $colorOneD 100%);
+  z-index: 100;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   .aboutText {
+    margin-left: 7%;
     width: 70%;
-    padding: 5rem;
-    text-align: center;
+    padding-bottom: 5rem;
 
     h2 {
-      @include headingL(5);
+      @include headingL(3);
       text-transform: uppercase;
+      letter-spacing: 2rem;
     };
   
     p.description {
-      padding-top: 3rem;
-      @include textL(2);
+      @include textOne(2);
       line-height: 3rem;
+      margin-top: 6rem;
     };
 
     a.button {
-      margin-top: 5rem;
+      margin-top: 4rem;
     }
   }
 
   .imgContainer {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-right: 0;
     width: 25vw;
     align-self: flex-end;
 
@@ -40,6 +41,19 @@ section.about {
       display: block;
       width: 100%;
       filter: drop-shadow(-10px 0px 5px rgba(0,0,0,0.3));
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  section.about {
+    .aboutText {
+      width: 100%;
+      margin-right: 7%;
+    }
+
+    .imgContainer {
+      display:none;
     }
   }
 }
