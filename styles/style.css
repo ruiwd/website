@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -254,7 +253,6 @@ a {
 html {
   height: 100%;
   overflow: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -373,6 +371,20 @@ a.button:focus::after {
 
 section {
   position: relative;
+}
+
+.fadeUp {
+  opacity: 0;
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fadeUp.faded {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .navTop.mobile {
@@ -645,7 +657,7 @@ section.portfolio .wrapper .allProjects {
 
 section.portfolio .wrapper .allProjects .singleProject {
   width: 40rem;
-  margin: auto 2rem 5rem 2rem;
+  margin: auto 2rem 6rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,7 +672,7 @@ section.portfolio .wrapper .allProjects .singleProject {
 
 section.portfolio .wrapper .allProjects .singleProject h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #fff;
   font-weight: 300;
   font-weight: 400;
@@ -669,7 +681,7 @@ section.portfolio .wrapper .allProjects .singleProject h3 {
 
 section.portfolio .wrapper .allProjects .singleProject h4 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: 300;
   margin-bottom: 2rem;
@@ -677,7 +689,7 @@ section.portfolio .wrapper .allProjects .singleProject h4 {
 
 section.portfolio .wrapper .allProjects .singleProject p.projectDescription {
   font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: 100;
   margin-bottom: 2rem;
@@ -693,18 +705,6 @@ section.contact {
           transform-style: preserve-3d;
   position: relative;
   z-index: -100;
-}
-
-section.contact::before {
-  content: '☎';
-  font-size: 30rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -20;
-  -webkit-transform: translateX(150%) translateY(20rem) translateZ(-1px) scale(2);
-          transform: translateX(150%) translateY(20rem) translateZ(-1px) scale(2);
-  opacity: .1;
 }
 
 section.contact .wrapper {
@@ -768,8 +768,20 @@ section.contact .wrapper .iconContainer p {
 }
 
 @media (max-width: 800px) {
-  section.contact .left, section.contact .right {
-    width: 100%;
+  section.contact .iconContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contact .iconContainer .icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contact .iconContainer .icon p {
+    margin-top: 2rem;
   }
 }
 

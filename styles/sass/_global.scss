@@ -4,7 +4,6 @@
 html {
   height: 100%;
   overflow: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -104,4 +103,15 @@ a.button:focus {
 
 section {
   position: relative;
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: all 1s;
+
+  &.faded {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
