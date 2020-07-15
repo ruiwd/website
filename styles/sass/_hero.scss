@@ -65,12 +65,20 @@ section.hero {
       color: $colorTwo;
     }
 
-    // h1, h2, h3 {
-
-    // }
-
     div.wang h2 {
       margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  section.hero {
+    display: flex;
+    justify-content: center;
+
+    .parallaxText {
+      left: auto;
+      padding: 2rem;
     }
   }
 }

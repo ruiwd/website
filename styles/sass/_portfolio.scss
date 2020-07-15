@@ -6,6 +6,19 @@ section.portfolio {
   padding: 7rem 0 5rem 0;
   position: relative;
   z-index: 100;
+  transform-style: preserve-3d;
+  overflow: hidden;
+
+  &::before{
+    content: '🖿';
+    font-size: 30rem;
+    position: absolute;
+    left: -40rem;
+    top: 27rem;
+    z-index: -20;
+    transform: translateZ(-1px) scale(2);
+    opacity: .1;
+  }
 
   .wrapper {
     display: flex;
@@ -48,5 +61,23 @@ section.portfolio {
         }
       }
     }
+  }
+}
+
+@media (max-width:700px) {
+  section.portfolio {
+    &::before {
+      font-size: 50rem;
+      left: -20rem;
+      top: 60rem;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  section.portfolio {
+    &::before {
+      display: none;
+    };
   }
 }

@@ -7,18 +7,18 @@ section.contact {
   transform-style: preserve-3d;
   position: relative;
   z-index: -100;
-  // overflow: hidden;
+  overflow: hidden;
 
-  // &::before{
-  //   content: '☎';
-  //   font-size: 30rem;
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   z-index: -20;
-  //   transform: translateX(150%) translateY(20rem) translateZ(-1px) scale(2);
-  //   opacity: .1;
-  // }
+  &::before{
+    content: '☎';
+    font-size: 30rem;
+    position: absolute;
+    right: -45rem;
+    top: 35rem;
+    z-index: -20;
+    transform: translateZ(-1px) scale(2);
+    opacity: .1;
+  }
 
   .wrapper {
     display: flex;
@@ -53,8 +53,14 @@ section.contact {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   section.contact {
+
+    &::before {
+      font-size: 50rem;
+      right: -20rem;
+      top: 65rem;
+    }
     
     .iconContainer {
       flex-direction: column;
@@ -67,5 +73,11 @@ section.contact {
         }
       }
     }
+  }
+}
+
+@-moz-document url-prefix() {
+  section.contact {
+    overflow: visible;
   }
 }
