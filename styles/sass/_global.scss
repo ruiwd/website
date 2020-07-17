@@ -108,11 +108,25 @@ section {
 
 .fadeUp {
   opacity: 0;
-  transform: translateY(10rem);
+  transform: translateY(5rem);
   transition: all 1s;
 
   &.faded {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

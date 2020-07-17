@@ -8,16 +8,20 @@ section.contact {
   position: relative;
   z-index: -100;
   overflow: hidden;
+  background-color: $colorThree;
 
   &::before{
-    content: '☎';
-    font-size: 30rem;
+    content: '';
+    background-image: url(../assets/contact.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 50%;
+    height: 100%;
     position: absolute;
-    right: -45rem;
-    top: 35rem;
-    z-index: -20;
-    transform: translateZ(-1px) scale(2);
+    left: 5%;
     opacity: .1;
+    animation: pulse infinite 3.5s;
   }
 
   .wrapper {
@@ -55,13 +59,6 @@ section.contact {
 
 @media (max-width: 700px) {
   section.contact {
-
-    &::before {
-      font-size: 50rem;
-      right: -20rem;
-      top: 65rem;
-    }
-    
     .iconContainer {
       flex-direction: column;
 
@@ -73,11 +70,9 @@ section.contact {
         }
       }
     }
-  }
-}
 
-@-moz-document url-prefix() {
-  section.contact {
-    overflow: visible;
+    &::before {
+      width: 65%;
+    }
   }
 }
