@@ -270,6 +270,10 @@ body {
   position: relative;
 }
 
+h3, h4, p, a {
+  letter-spacing: .2rem;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 85%;
@@ -325,7 +329,7 @@ a.button::before, a.button::after {
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   color: #fff;
-  top: 0.4rem;
+  top: 0.5rem;
 }
 
 a.button p {
@@ -347,7 +351,7 @@ a.button::before {
 }
 
 a.button::after {
-  left: 1.7rem;
+  left: 1.8rem;
 }
 
 a.button:hover,
@@ -362,12 +366,12 @@ a.button:focus p {
 
 a.button:hover::before,
 a.button:focus::before {
-  right: .5rem;
+  right: .6rem;
 }
 
 a.button:hover::after,
 a.button:focus::after {
-  left: .5rem;
+  left: .7rem;
 }
 
 section {
@@ -416,6 +420,10 @@ section {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+html.touch *:hover {
+  all: unset !important;
 }
 
 div.hamburger {
@@ -577,7 +585,7 @@ nav.navTop.mobile ul li {
 }
 
 nav.navTop.mobile ul li a {
-  padding: 8rem 5rem 8rem 7rem;
+  padding: 6rem 5rem 6rem 7rem;
   height: 100%;
 }
 
@@ -737,6 +745,7 @@ section.about .aboutText p.description {
 
 section.about .aboutText a.button {
   margin-top: 4rem;
+  margin-right: 6rem;
 }
 
 section.about .imgContainer {
@@ -849,16 +858,15 @@ section.skills .wrapper .skillsGallery li:hover, section.skills .wrapper .skills
 }
 
 section.skills .wrapper .skillsGallery li i {
-  font-size: 12rem;
+  font-size: 8rem;
   margin-bottom: 1rem;
 }
 
 section.skills .wrapper .skillsGallery li h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   font-weight: 300;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -932,7 +940,7 @@ section.portfolio .wrapper .allProjects {
 }
 
 section.portfolio .wrapper .allProjects .singleProject {
-  width: 40rem;
+  width: 55rem;
   margin: auto 2rem 6rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -963,19 +971,30 @@ section.portfolio .wrapper .allProjects .singleProject h4 {
   margin-bottom: 2rem;
 }
 
-section.portfolio .wrapper .allProjects .singleProject p.projectDescription {
-  font-family: "Lato", sans-serif;
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: 100;
-  margin-bottom: 2rem;
-  text-align: center;
+section.portfolio .wrapper .allProjects .singleProject img {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+section.portfolio .wrapper .allProjects .singleProject .linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (max-width: 700px) {
   section.portfolio::before {
     width: 65%;
     top: 50%;
+  }
+  section.portfolio .wrapper .allProjects .singleProject {
+    width: 100%;
   }
 }
 
@@ -1102,5 +1121,4 @@ footer p {
   color: #fff;
   font-weight: 300;
   font-weight: 400;
-  text-transform: uppercase;
 }

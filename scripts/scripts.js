@@ -5,7 +5,7 @@ site.scrollFadeUp = () => {
 
   const fadePosition = (el) => {
     const elementPosition = el.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
+    const screenPosition = window.innerHeight * 8/9;
 
     if (elementPosition < screenPosition) {
       el.classList.add('faded');

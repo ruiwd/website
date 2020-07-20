@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+h3, h4, p, a {
+  letter-spacing: .2rem;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 85%;
@@ -64,7 +68,7 @@ a.button {
     position: relative;
     transition: all 0.1s ease-in;
     color: $colorTwo;
-    top: 0.4rem
+    top: 0.5rem
   }
 
   p {
@@ -81,7 +85,7 @@ a.button {
   }
 
   &::after {
-    left: 1.7rem;
+    left: 1.8rem;
   }
 }
 
@@ -94,11 +98,11 @@ a.button:focus {
   }
 
   &::before {
-    right: .5rem;
+    right: .6rem;
   }
 
   &::after {
-    left: .5rem;
+    left: .7rem;
   }
 }
 
@@ -129,4 +133,8 @@ section {
   100% {
     transform: scale(1);
   }
+}
+
+html.touch *:hover {
+  all:unset!important;
 }

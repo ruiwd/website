@@ -40,7 +40,7 @@ section.portfolio {
       flex-wrap: wrap;
 
       .singleProject {
-        width: 40rem;
+        width: 55rem;
         margin: auto 2rem 6rem 2rem;
         display: flex;
         flex-direction: column;
@@ -57,11 +57,24 @@ section.portfolio {
           margin-bottom: 2rem;
         }
 
-        p.projectDescription {
-          @include textTwo(2.5);
-          margin-bottom: 2rem;
-          text-align: center;
+        img {
+          display: block;
+          margin-top: 1rem;
+          margin-bottom: 3rem;
+          width: 100%;
         }
+
+        .linkContainer {
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+        }
+
+        // p.projectDescription {
+        //   @include textTwo(2.5);
+        //   margin-bottom: 2rem;
+        //   text-align: center;
+        // }
       }
     }
   }
@@ -72,6 +85,14 @@ section.portfolio {
     &::before {
       width: 65%;
       top: 50%;
+    }
+
+    .wrapper {
+      .allProjects {
+        .singleProject {
+          width: 100%;
+        }
+      }
     }
   }
 }

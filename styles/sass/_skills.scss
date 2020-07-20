@@ -52,13 +52,12 @@ section.skills {
         }
 
         i {
-          font-size: 12rem;
+          font-size: 8rem;
           margin-bottom: 1rem;
         }
 
         h3 {
-          @include textOne (3);
-          font-weight: 400;
+          @include textOne (2);
           text-align: center;
         }
       }
