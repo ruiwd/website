@@ -366,12 +366,12 @@ a.button:focus p {
 
 a.button:hover::before,
 a.button:focus::before {
-  right: .6rem;
+  right: .5rem;
 }
 
 a.button:hover::after,
 a.button:focus::after {
-  left: .7rem;
+  left: .6rem;
 }
 
 section {
