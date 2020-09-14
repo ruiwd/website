@@ -1,278 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RuiWD</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuiWD</title>
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
 
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900" rel="stylesheet" type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap" rel="stylesheet"> 
-  <script src='https://kit.fontawesome.com/30b04c8f55.js' crossorigin='anonymous'></script>
+    <!-- Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:100,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/30b04c8f55.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navTop web">
+        <ul>
+          <li>
+            <a href="#hero"
+              ><i class="fas fa-home"></i>
+              <p>Home</p></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fas fa-search"></i>
+              <p>About</p></a
+            >
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="fas fa-cog"></i>
+              <p>Skills</p></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="fas fa-folder"></i>
+              <p>Portfolio</p></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fas fa-phone"></i>
+              <p>Contact</p></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-</head>
-<body>
-  <header>
-    <nav class="navTop web">
-      <ul>
-        <li><a href="#hero"><i class="fas fa-home"></i><p>Home</p></a></li>
-        <li><a href="#about"><i class="fas fa-search"></i><p>About</p></a></li>
-        <li><a href="#skills"><i class="fas fa-cog"></i><p>Skills</p></a></li>
-        <li><a href="#portfolio"><i class="fas fa-folder"></i><p>Portfolio</p></a></li>
-        <li><a href="#contact"><i class="fas fa-phone"></i><p>Contact</p></a></li>
-      </ul>
-    </nav>
-
-    <div class="hamburger">
-      <div class="hamburgerOne line"></div>
-      <div class="hamburgerTwo line"></div>
-      <div class="hamburgerThree line"></div>
-    </div>
-
-    <nav class="navTop mobile">
-      <ul>
-        <li><a href="#hero"><i class="fas fa-home"></i><p>Home</p></a></li>
-        <li><a href="#about"><i class="fas fa-search"></i><p>About</p></a></li>
-        <li><a href="#skills"><i class="fas fa-cog"></i><p>Skills</p></a></li>
-        <li><a href="#portfolio"><i class="fas fa-folder"></i><p>Portfolio</p></a></li>
-        <li><a href="#contact"><i class="fas fa-phone"></i><p>Contact</p></a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="hero" class="hero">
-    <div class="parallaxText">
-      <div class="name">
-        <h1 class>RUI</h1>
-        <h3>*pronounced "Ray"*</h3>
+      <div class="hamburger">
+        <div class="hamburgerOne line"></div>
+        <div class="hamburgerTwo line"></div>
+        <div class="hamburgerThree line"></div>
       </div>
-      <div class="wang">
-        <h2>W</h2>
-        <div class="explanation">
-          <h3>ang</h3>
-          <h3>eb</h3>
-        </div>
-      </div>
-      <div class="dong">
-        <h2>D</h2>
-        <div class="explanation">
-          <h3>ong</h3>
-          <h3>eveloper</h3>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="about">
-    <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
-    <div class="aboutText fadeUp">
-      <h2>About me</h2>
-      <p class="description">A semi-demi-perfectionist of a web developer based in Toronto, CA. With a passion for aesthetics, I enjoy creating websites and applications that are not only a pleasure to use but also to look at.</p>
-      <div class="linkContainer">
-        <a class="button" href="#portfolio"><p>See my work</p></a>
-        <a class="button" href="./assets/resume150720_RuiWangDong.pdf"><p>See my Resume</p></a>
-      </div>
-    </div>
-    <div class="imgContainer fadeUp">
-      <img src="./assets/headshot2.png" alt="Rui Wang-Dong">
-    </div>
-  </section>
+      <nav class="navTop mobile">
+        <ul>
+          <li>
+            <a href="#hero"
+              ><i class="fas fa-home"></i>
+              <p>Home</p></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fas fa-search"></i>
+              <p>About</p></a
+            >
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="fas fa-cog"></i>
+              <p>Skills</p></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="fas fa-folder"></i>
+              <p>Portfolio</p></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fas fa-phone"></i>
+              <p>Contact</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <section id="skills" class="skills">
-    <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
-    <div class="wrapper">
-      <h2 class="fadeUp">Skills</h2>
-      <ul class="skillsGallery">
-        <li class="fadeUp">
-          <i class="fab fa-html5"></i>
-          <h3>HTML5</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-css3-alt"></i>
-          <h3>CSS3</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-js"></i>
-          <h3>JavaScript</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fas fa-dollar-sign"></i>
-          <h3>jQuery</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-git-alt"></i>
-          <h3>Git</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fas fa-cogs"></i>
-          <h3>API</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-react"></i>
-          <h3>React</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-adobe"></i>
-          <h3>Adobe CC</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fas fa-fire"></i>
-          <h3>Firebase</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fab fa-sass"></i>
-          <h3>Sass</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>Responsive Design</h3>
-        </li>
-        <li class="fadeUp">
-          <i class="fas fa-universal-access"></i>
-          <h3>Accessibility Standards</h3>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section id="portfolio" class="portfolio">
-    <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
-    <div class="wrapper">
-      <h2 class="fadeUp">Portfolio</h2>
-      <div class="allProjects">
-        <div class="singleProject fadeUp">
-          <h3>Ocean Explorer</h3>
-          <h4>ReactJS|HTML|SCSS</h4>
-          <a class="portfolioImg" href="https://ruiwd.github.io/jerryDongProjectTwo/">
-            <img src="./assets/portfolio/DOE01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">Interactive educational ReactJS application. *WORK IN PROGRESS*</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://ruiwd.github.io/oceanExplorer/" class="button live"><p>Explore</p></a>
-            <a href="https://github.com/ruiwd/oceanExplorer" class="button repo"><p>Github</p></a>
+    <section id="hero" class="hero">
+      <div class="parallaxText">
+        <div class="name">
+          <h1 class>RUI</h1>
+          <h3>*pronounced "Ray"*</h3>
+        </div>
+        <div class="wang">
+          <h2>W</h2>
+          <div class="explanation">
+            <h3>ang</h3>
+            <h3>eb</h3>
           </div>
         </div>
-        <div class="singleProject fadeUp">
-          <h3>My Discussion Board</h3>
-          <h4>HTML|CSS|ReactJS|Firebase</h4>
-          <a class="portfolioImg" href="https://ruiwd.github.io/jerryDongProjectFive/">
-            <img src="./assets/portfolio/MDB01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">ReactJS messaging app using a Firebase database</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://ruiwd.github.io/jerryDongProjectFive/" class="button"><p>Explore</p></a>
-            <a href="https://github.com/ruiwd/jerryDongProjectFive" class="button repo"><p>Github</p></a>
-          </div>
-        </div>
-        <div class="singleProject fadeUp">
-          <h3>COVID Resto & Bar</h3>
-          <h4>HTML|Sass|JQuery|API</h4>
-          <a class="portfolioImg" href="https://juno27royalty.github.io/COVIDRestaurantAndBar/">
-            <img src="./assets/portfolio/CRB01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">Javascript (JQuery) recipe search app using RESTful APIs</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://juno27royalty.github.io/COVIDRestaurantAndBar/" class="button"><p>Explore</p></a>
-            <a href="https://github.com/juno27royalty/COVIDRestaurantAndBar" class="button repo"><p>Github</p></a>
-          </div>
-        </div>
-        <div class="singleProject fadeUp">
-          <h3>24 Points</h3>
-          <h4>HTML|CSS|JQuery</h4>
-          <a class="portfolioImg" href="https://ruiwd.github.io/TwentyFourCardGame/">
-            <img src="./assets/portfolio/TF01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">Javascript (JQuery) arithmetic card game - My first ever app</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://ruiwd.github.io/TwentyFourCardGame/" class="button"><p>Explore</p></a>
-            <a href="https://github.com/ruiwd/TwentyFourCardGame" class="button repo"><p>Github</p></a>
-          </div>
-        </div>
-        <div class="singleProject fadeUp">
-          <h3>Hawk & Dove</h3>
-          <h4>HTML|CSS|JQuery</h4>
-          <a class="portfolioImg" href="https://ruiwd.github.io/jerryDongProjectThree/">
-            <img src="./assets/portfolio/HD01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">Javascript (JQuery) rock-paper-scissors type game</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://ruiwd.github.io/jerryDongProjectThree/" class="button"><p>Explore</p></a>
-            <a href="https://github.com/ruiwd/jerryDongProjectThree" class="button repo"><p>Github</p></a>
-          </div>
-        </div>
-        <div class="singleProject fadeUp">
-          <h3>My Watchlist</h3>
-          <h4>HTML|Sass|ReactJS|API|Firebase</h4>
-          <a class="portfolioImg" href="https://tobikoberalphandnull.github.io/project-six/">
-            <img src="./assets/portfolio/MW01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">ReactJS TV show superlative list creator using Firebase and APIs</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://tobikoberalphandnull.github.io/project-six/" class="button"><p>Explore</p></a>
-            <a href="https://github.com/tobikoberalphandnull/project-six" class="button repo"><p>Github</p></a>
-          </div>
-        </div>
-        <div class="singleProject fadeUp">
-          <h3>Mind n' Soul</h3>
-          <h4>HTML|Sass</h4>
-          <a class="portfolioImg" href="https://ruiwd.github.io/jerryDongProjectTwo/">
-            <img src="./assets/portfolio/MS01.jpg" alt="A screenshot of this project">
-            <p class="projectDescription">Multi-page PSD conversion using mutiple HTMLs and Sass</p>
-          </a>
-          <div class="linkContainer">
-            <a href="https://ruiwd.github.io/jerryDongProjectTwo/" class="button live"><p>Explore</p></a>
-            <a href="https://github.com/ruiwd/jerryDongProjectTwo" class="button repo"><p>Github</p></a>
+        <div class="dong">
+          <h2>D</h2>
+          <div class="explanation">
+            <h3>ong</h3>
+            <h3>eveloper</h3>
           </div>
         </div>
       </div>
-    </div>
-  </section>  
+    </section>
 
-  <section id="contact" class="contact">
-    <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
-    <div class="wrapper">
-      <h2 class="fadeUp">Contact me</h2>
-      <div class="iconContainer">
-        <div class="left">
-          <div class="phone icon fadeUp">
-            <i class="fas fa-phone-square-alt"></i>
-            <p>+1-514-823-6604</p>
-          </div>
-          <div class="email icon fadeUp">
-            <i class="fas fa-envelope-square"></i>
-            <p>rtdong9421@gmail</p>
-          </div>
+    <section id="about" class="about">
+      <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
+      <div class="aboutText fadeUp">
+        <h2>About me</h2>
+        <p class="description">
+          A semi-demi-perfectionist of a web developer based in Toronto, CA.
+          With a passion for aesthetics, I enjoy creating websites and
+          applications that are not only a pleasure to use but also to look at.
+        </p>
+        <div class="linkContainer">
+          <a class="button" href="#portfolio"><p>See my work</p></a>
+          <a class="button" href="./assets/resume150720_RuiWangDong.pdf"
+            ><p>See my Resume</p></a
+          >
         </div>
-        <div class="right">
-          <div class="github icon fadeUp">
-            <i class="fab fa-github-square"></i>
-            <p>github.com/ruiwd</p>
+      </div>
+      <div class="imgContainer fadeUp">
+        <img src="./assets/headshot2.png" alt="Rui Wang-Dong" />
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
+      <div class="wrapper">
+        <h2 class="fadeUp">Skills</h2>
+        <ul class="skillsGallery">
+          <li class="fadeUp">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>jQuery</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-git-alt"></i>
+            <h3>Git</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fas fa-cogs"></i>
+            <h3>API</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-adobe"></i>
+            <h3>Adobe CC</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fas fa-fire"></i>
+            <h3>Firebase</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fab fa-sass"></i>
+            <h3>Sass</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+          </li>
+          <li class="fadeUp">
+            <i class="fas fa-universal-access"></i>
+            <h3>Accessibility Standards</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
+      <div class="wrapper">
+        <h2 class="fadeUp">Portfolio</h2>
+        <div class="allProjects">
+          <div class="singleProject fadeUp">
+            <h3>Ocean Explorer</h3>
+            <h4>ReactJS|HTML|SCSS</h4>
+            <a
+              class="portfolioImg"
+              href="https://ruiwd.github.io/jerryDongProjectTwo/"
+            >
+              <img
+                src="./assets/portfolio/DOE01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                Interactive educational ReactJS application. *WORK IN
+                PROGRESS/DESKTOP ONLY*
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://ruiwd.github.io/oceanExplorer/"
+                class="button live"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/ruiwd/oceanExplorer"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
           </div>
-          <div class="linkedin icon fadeUp">
-            <i class="fab fa-linkedin"></i>
-            <p>linkedin.com/in/ruiwd</p>
+          <div class="singleProject fadeUp">
+            <h3>My Discussion Board</h3>
+            <h4>HTML|CSS|ReactJS|Firebase</h4>
+            <a
+              class="portfolioImg"
+              href="https://ruiwd.github.io/jerryDongProjectFive/"
+            >
+              <img
+                src="./assets/portfolio/MDB01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                ReactJS messaging app using a Firebase database
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://ruiwd.github.io/jerryDongProjectFive/"
+                class="button"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/ruiwd/jerryDongProjectFive"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
+          </div>
+          <div class="singleProject fadeUp">
+            <h3>COVID Resto & Bar</h3>
+            <h4>HTML|Sass|JQuery|API</h4>
+            <a
+              class="portfolioImg"
+              href="https://juno27royalty.github.io/COVIDRestaurantAndBar/"
+            >
+              <img
+                src="./assets/portfolio/CRB01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                Javascript (JQuery) recipe search app using RESTful APIs
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://juno27royalty.github.io/COVIDRestaurantAndBar/"
+                class="button"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/juno27royalty/COVIDRestaurantAndBar"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
+          </div>
+          <div class="singleProject fadeUp">
+            <h3>24 Points</h3>
+            <h4>HTML|CSS|JQuery</h4>
+            <a
+              class="portfolioImg"
+              href="https://ruiwd.github.io/TwentyFourCardGame/"
+            >
+              <img
+                src="./assets/portfolio/TF01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                Javascript (JQuery) arithmetic card game - My first ever app
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://ruiwd.github.io/TwentyFourCardGame/"
+                class="button"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/ruiwd/TwentyFourCardGame"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
+          </div>
+          <div class="singleProject fadeUp">
+            <h3>Hawk & Dove</h3>
+            <h4>HTML|CSS|JQuery</h4>
+            <a
+              class="portfolioImg"
+              href="https://ruiwd.github.io/jerryDongProjectThree/"
+            >
+              <img
+                src="./assets/portfolio/HD01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                Javascript (JQuery) rock-paper-scissors type game
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://ruiwd.github.io/jerryDongProjectThree/"
+                class="button"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/ruiwd/jerryDongProjectThree"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
+          </div>
+          <div class="singleProject fadeUp">
+            <h3>My Watchlist</h3>
+            <h4>HTML|Sass|ReactJS|API|Firebase</h4>
+            <a
+              class="portfolioImg"
+              href="https://tobikoberalphandnull.github.io/project-six/"
+            >
+              <img
+                src="./assets/portfolio/MW01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                ReactJS TV show superlative list creator using Firebase and APIs
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://tobikoberalphandnull.github.io/project-six/"
+                class="button"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/tobikoberalphandnull/project-six"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
+          </div>
+          <div class="singleProject fadeUp">
+            <h3>Mind n' Soul</h3>
+            <h4>HTML|Sass</h4>
+            <a
+              class="portfolioImg"
+              href="https://ruiwd.github.io/jerryDongProjectTwo/"
+            >
+              <img
+                src="./assets/portfolio/MS01.jpg"
+                alt="A screenshot of this project"
+              />
+              <p class="projectDescription">
+                Multi-page PSD conversion using mutiple HTMLs and Sass
+              </p>
+            </a>
+            <div class="linkContainer">
+              <a
+                href="https://ruiwd.github.io/jerryDongProjectTwo/"
+                class="button live"
+                ><p>Explore</p></a
+              >
+              <a
+                href="https://github.com/ruiwd/jerryDongProjectTwo"
+                class="button repo"
+                ><p>Github</p></a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>Rui Wang-Dong <span>&copy;</span> 2020</p>
-  </footer>
+    <section id="contact" class="contact">
+      <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
+      <div class="wrapper">
+        <h2 class="fadeUp">Contact me</h2>
+        <div class="iconContainer">
+          <div class="left">
+            <div class="phone icon fadeUp">
+              <i class="fas fa-phone-square-alt"></i>
+              <p>+1-514-823-6604</p>
+            </div>
+            <div class="email icon fadeUp">
+              <i class="fas fa-envelope-square"></i>
+              <p>rtdong9421@gmail</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="github icon fadeUp">
+              <i class="fab fa-github-square"></i>
+              <p>github.com/ruiwd</p>
+            </div>
+            <div class="linkedin icon fadeUp">
+              <i class="fab fa-linkedin"></i>
+              <p>linkedin.com/in/ruiwd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Script Libraries -->
-  <script src="./scripts/scripts.js"></script>
+    <footer>
+      <p>Rui Wang-Dong <span>&copy;</span> 2020</p>
+    </footer>
 
-</body>
+    <!-- Script Libraries -->
+    <script src="./scripts/scripts.js"></script>
+  </body>
 </html>
