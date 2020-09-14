@@ -1,4 +1,4 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 @mixin headingL($size) {
   font-family: $fontOne;
@@ -22,6 +22,7 @@
 }
 
 @mixin headingBox($size) {
+  pointer-events: none;
   text-transform: uppercase;
   display: inline;
   font-family: $fontOne;
@@ -29,6 +30,10 @@
   color: $colorTwo;
   font-weight: 700;
   padding: 2rem 5rem;
-  border: solid .5rem $colorTwo;
+  border: solid 0.5rem $colorTwo;
   letter-spacing: 2rem;
+
+  h2 {
+    user-select: none;
+  }
 }

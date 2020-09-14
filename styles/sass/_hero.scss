@@ -2,24 +2,25 @@
 @import "_mixins.scss";
 
 section.hero {
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   padding-top: 20vh;
   transform-style: preserve-3d;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     width: 100vw;
     height: 100vh;
     top: 0em;
     left: 0em;
     position: absolute;
-    background-image: url('../assets/heroImage2.jpg');
+    background-image: url("../assets/heroImage2.jpg");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     z-index: -10;
-    transform:translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
   }
 
   .parallaxText {
@@ -29,7 +30,8 @@ section.hero {
     transform: translate(0%, -50%);
     border: solid 1rem $colorTwo;
     padding: 2rem 5rem;
-    filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5)) drop-shadow(3px 3px 3px rgba(0,0,0,.7));
+    filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.5))
+      drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
 
     div.name,
     div.wang,
@@ -52,7 +54,8 @@ section.hero {
       align-items: center;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-family: $fontOne;
       font-size: 10rem;
       color: $colorTwo;

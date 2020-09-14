@@ -442,6 +442,40 @@
       <a href="#hero" class="top"><i class="fas fa-caret-up"></i></a>
       <div class="wrapper">
         <h2 class="fadeUp">Contact me</h2>
+        <form class="contactForm" action="contactForm.php" method="post">
+          <div class="info">
+            <input
+              class="fadeUp"
+              autocomplete="off"
+              type="text"
+              name="name"
+              placeholder="Full name"
+            />
+            <input
+              class="fadeUp"
+              autocomplete="off"
+              type="email"
+              name="email"
+              placeholder="E-mail address"
+            />
+          </div>
+          <input
+            class="fadeUp"
+            autocomplete="off"
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            class="fadeUp"
+            autocomplete="off"
+            name="message"
+            placeholder="Your message here"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="fadeUp" type="submit"><p>Send</p></button>
+        </form>
         <div class="iconContainer">
           <div class="left">
             <div class="phone icon fadeUp">

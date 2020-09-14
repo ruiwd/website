@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import '_mixins.scss';
+@import "_variables.scss";
+@import "_mixins.scss";
 
 section.contact {
   padding: 7rem 0 7rem 0;
@@ -10,8 +10,8 @@ section.contact {
   overflow: hidden;
   background-color: $colorThree;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     background-image: url(../assets/contact.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ section.contact {
     height: 100%;
     position: absolute;
     left: 5%;
-    opacity: .1;
+    opacity: 0.1;
     animation: pulse infinite 3.5s;
   }
 
@@ -29,10 +29,57 @@ section.contact {
     flex-direction: column;
     align-items: center;
 
+    form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      textarea {
+        resize: none;
+      }
+
+      input,
+      textarea {
+        color: $colorTwo;
+        background-color: transparent;
+        border-top: none;
+        border-right: none;
+        border-left: 3px solid $colorTwo;
+        border-bottom: 3px solid $colorTwo;
+        outline: none;
+        margin-top: 3rem;
+        padding: 1rem;
+        @include textOne(2);
+
+        &::placeholder {
+          @include textOne(2);
+          text-transform: uppercase;
+        }
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 47%;
+        }
+      }
+
+      button {
+        margin-top: 3rem;
+        width: max-content;
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+      }
+    }
+
     h2 {
       @include headingBox(3);
     }
-  
+
     .iconContainer {
       width: 100%;
       display: flex;
@@ -59,20 +106,31 @@ section.contact {
 
 @media (max-width: 700px) {
   section.contact {
-    .iconContainer {
-      flex-direction: column;
+    .wrapper {
+      form {
+        width: 90%;
+      }
 
-      .icon {
+      .iconContainer {
         flex-direction: column;
 
-        p {
-          margin-top: 2rem;
+        & .left,
+        .right {
+          width: 100%;
+        }
+
+        .icon {
+          margin-left: 20%;
+
+          p {
+            margin: 0 0 0 2rem;
+          }
         }
       }
-    }
 
-    &::before {
-      width: 65%;
+      &::before {
+        width: 65%;
+      }
     }
   }
 }

@@ -270,8 +270,11 @@ body {
   position: relative;
 }
 
-h3, h4, p, a {
-  letter-spacing: .2rem;
+h3,
+h4,
+p,
+a {
+  letter-spacing: 0.2rem;
 }
 
 .wrapper {
@@ -286,7 +289,7 @@ a {
 }
 
 a.top {
-  padding: .3rem 1.8rem;
+  padding: 0.3rem 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   color: #fff;
@@ -306,7 +309,16 @@ a.top:hover, a.top:focus {
   color: #fff;
 }
 
-a.button {
+form button {
+  background-color: transparent;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a.button,
+form button {
   padding: 0.6rem 0 0.4rem 0;
   line-height: 2rem;
   -webkit-transition-delay: 0.2s;
@@ -320,8 +332,10 @@ a.button {
   text-transform: uppercase;
 }
 
-a.button::before, a.button::after {
-  content: '|';
+a.button::before, a.button::after,
+form button::before,
+form button::after {
+  content: "|";
   font-size: 5rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -332,7 +346,8 @@ a.button::before, a.button::after {
   top: 0.5rem;
 }
 
-a.button p {
+a.button p,
+form button p {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   color: #fff;
@@ -346,32 +361,43 @@ a.button p {
           transition-duration: 0.3s;
 }
 
-a.button::before {
+a.button::before,
+form button::before {
   right: 1.7rem;
 }
 
-a.button::after {
+a.button::after,
+form button::after {
   left: 1.8rem;
 }
 
+form button:hover,
+form button:focus,
 a.button:hover,
 a.button:focus {
+  cursor: pointer;
   background-color: #fff;
 }
 
+form button:hover p,
+form button:focus p,
 a.button:hover p,
 a.button:focus p {
   color: #3b3b3b;
 }
 
+form button:hover::before,
+form button:focus::before,
 a.button:hover::before,
 a.button:focus::before {
-  right: .5rem;
+  right: 0.5rem;
 }
 
+form button:hover::after,
+form button:focus::after,
 a.button:hover::after,
 a.button:focus::after {
-  left: .6rem;
+  left: 0.6rem;
 }
 
 section {
@@ -427,7 +453,7 @@ html.touch *:hover {
 }
 
 div.hamburger {
-  position: absolute;
+  position: fixed;
   left: 10px;
   top: 10px;
   z-index: 200;
@@ -555,7 +581,8 @@ nav.navTop.web ul li p {
   display: none;
 }
 
-nav.navTop.web ul li p, nav.navTop.web ul li i {
+nav.navTop.web ul li p,
+nav.navTop.web ul li i {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -609,6 +636,7 @@ nav.navTop.mobile ul li a:hover, nav.navTop.mobile ul li a:focus {
 }
 
 section.hero {
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   padding-top: 20vh;
@@ -617,7 +645,7 @@ section.hero {
 }
 
 section.hero::before {
-  content: '';
+  content: "";
   width: 100vw;
   height: 100vh;
   top: 0em;
@@ -671,7 +699,8 @@ section.hero .parallaxText div.dong {
           align-items: center;
 }
 
-section.hero .parallaxText h1, section.hero .parallaxText h2 {
+section.hero .parallaxText h1,
+section.hero .parallaxText h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 10rem;
   color: #fff;
@@ -809,6 +838,7 @@ section.skills .wrapper {
 }
 
 section.skills .wrapper h2 {
+  pointer-events: none;
   text-transform: uppercase;
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -819,6 +849,13 @@ section.skills .wrapper h2 {
   border: solid 0.5rem #fff;
   letter-spacing: 2rem;
   margin-bottom: 3rem;
+}
+
+section.skills .wrapper h2 h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 section.skills .wrapper .skillsGallery {
@@ -885,7 +922,7 @@ section.portfolio {
 }
 
 section.portfolio::before {
-  content: '';
+  content: "";
   background-image: url(../assets/portfolio.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -893,7 +930,7 @@ section.portfolio::before {
   right: 5%;
   width: 40%;
   height: 100%;
-  opacity: .1;
+  opacity: 0.1;
   position: absolute;
   -webkit-animation: pulse infinite 3.5s;
           animation: pulse infinite 3.5s;
@@ -916,6 +953,7 @@ section.portfolio .wrapper {
 
 section.portfolio .wrapper h2 {
   margin-bottom: 5rem;
+  pointer-events: none;
   text-transform: uppercase;
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -926,6 +964,13 @@ section.portfolio .wrapper h2 {
   border: solid 0.5rem #fff;
   letter-spacing: 2rem;
   text-align: center;
+}
+
+section.portfolio .wrapper h2 h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 section.portfolio .wrapper .allProjects {
@@ -1039,7 +1084,7 @@ section.contact {
 }
 
 section.contact::before {
-  content: '';
+  content: "";
   background-image: url(../assets/contact.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1048,7 +1093,7 @@ section.contact::before {
   height: 100%;
   position: absolute;
   left: 5%;
-  opacity: .1;
+  opacity: 0.1;
   -webkit-animation: pulse infinite 3.5s;
           animation: pulse infinite 3.5s;
 }
@@ -1066,7 +1111,102 @@ section.contact .wrapper {
           align-items: center;
 }
 
+section.contact .wrapper form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+section.contact .wrapper form textarea {
+  resize: none;
+}
+
+section.contact .wrapper form input,
+section.contact .wrapper form textarea {
+  color: #fff;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  outline: none;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+section.contact .wrapper form input::-webkit-input-placeholder,
+section.contact .wrapper form textarea::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section.contact .wrapper form input:-ms-input-placeholder,
+section.contact .wrapper form textarea:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section.contact .wrapper form input::-ms-input-placeholder,
+section.contact .wrapper form textarea::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section.contact .wrapper form input::placeholder,
+section.contact .wrapper form textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section.contact .wrapper form .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.contact .wrapper form .info input {
+  width: 47%;
+}
+
+section.contact .wrapper form button {
+  margin-top: 3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 section.contact .wrapper h2 {
+  pointer-events: none;
   text-transform: uppercase;
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -1076,6 +1216,13 @@ section.contact .wrapper h2 {
   padding: 2rem 5rem;
   border: solid 0.5rem #fff;
   letter-spacing: 2rem;
+}
+
+section.contact .wrapper h2 h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 section.contact .wrapper .iconContainer {
@@ -1114,22 +1261,26 @@ section.contact .wrapper .iconContainer p {
 }
 
 @media (max-width: 700px) {
-  section.contact .iconContainer {
+  section.contact .wrapper form {
+    width: 90%;
+  }
+  section.contact .wrapper .iconContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section.contact .iconContainer .icon {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  section.contact .wrapper .iconContainer .left,
+  section.contact .wrapper .iconContainer .right {
+    width: 100%;
   }
-  section.contact .iconContainer .icon p {
-    margin-top: 2rem;
+  section.contact .wrapper .iconContainer .icon {
+    margin-left: 20%;
   }
-  section.contact::before {
+  section.contact .wrapper .iconContainer .icon p {
+    margin: 0 0 0 2rem;
+  }
+  section.contact .wrapper::before {
     width: 65%;
   }
 }

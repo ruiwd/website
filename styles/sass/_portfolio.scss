@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import '_mixins.scss';
+@import "_variables.scss";
+@import "_mixins.scss";
 
 section.portfolio {
   background-color: $colorOneD;
@@ -8,8 +8,8 @@ section.portfolio {
   z-index: 100;
   overflow: hidden;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     background-image: url(../assets/portfolio.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ section.portfolio {
     right: 5%;
     width: 40%;
     height: 100%;
-    opacity: .1;
+    opacity: 0.1;
     position: absolute;
     animation: pulse infinite 3.5s;
     transform-origin: top;
@@ -92,13 +92,12 @@ section.portfolio {
             opacity: 1;
           }
         }
-
       }
     }
   }
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   section.portfolio {
     &::before {
       width: 65%;
