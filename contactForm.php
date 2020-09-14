@@ -55,3 +55,5 @@ if(mail($address, $received_subject, $message, $header)) {
 	echo 'ERROR!';
 
 }
+
+?>
