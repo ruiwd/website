@@ -1035,7 +1035,8 @@ section.portfolio .wrapper .allProjects .singleProject .portfolioImg {
 
 section.portfolio .wrapper .allProjects .singleProject .portfolioImg img {
   display: block;
-  width: 100%;
+  width: 50rem;
+  height: 28rem;
 }
 
 section.portfolio .wrapper .allProjects .singleProject .portfolioImg p.projectDescription {
