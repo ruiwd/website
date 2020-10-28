@@ -390,7 +390,7 @@ form button:hover::before,
 form button:focus::before,
 a.button:hover::before,
 a.button:focus::before {
-  right: 0.5rem;
+  right: 0.4rem;
 }
 
 form button:hover::after,
